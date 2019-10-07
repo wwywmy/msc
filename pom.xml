@@ -79,6 +79,7 @@
 		<module>msc-api</module>
 		<module>msc-provider-dept-8081</module>
 		<module>msc-consumer-dept-8071</module>
+		<module>msc-eureka-7001</module>
 	</modules>
 	
 	<parent>
