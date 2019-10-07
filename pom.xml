@@ -82,6 +82,8 @@
 		<module>msc-eureka-7001</module>
 		<module>msc-eureka-7002</module>
 		<module>msc-eureka-7003</module>
+		<module>msc-provider-dept-8082</module>
+		<module>msc-provider-dept-8083</module>
 	</modules>
 
 	<parent>

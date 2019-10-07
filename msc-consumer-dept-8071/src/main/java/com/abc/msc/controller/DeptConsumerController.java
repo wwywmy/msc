@@ -15,7 +15,8 @@ import com.abc.msc.entity.Dept;
 @RequestMapping("/consumer/dept")
 public class DeptConsumerController {
 
-	private static final String REST_URL_PREFIX = "http://localhost:8081";
+	//private static final String REST_URL_PREFIX = "http://localhost:8081";
+	private static final String REST_URL_PREFIX = "http://MSC-DEPT";
 	
 	@Autowired
 	private RestTemplate restTemplate;

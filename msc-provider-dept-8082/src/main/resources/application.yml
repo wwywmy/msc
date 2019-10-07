@@ -1,0 +1,24 @@
+server:
+  port: 8082
+
+eureka:  client:    service-url:      #defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:    instance-id: msc-dept8082
+    prefer-ip-address: true
+
+spring:  application:    name: msc-dept
+  datasource:
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    url: jdbc:p6spy:mysql://localhost:3306/cloudDB02
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath*:com/**/mapper/*.xml
+    
+info: 
+  app.name: msc
+  company.name: www.abc.com
+  build.artifactId: '@project.artifactId@'
+  build.version: '@project.version@'
