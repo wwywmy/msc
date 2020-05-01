@@ -1,0 +1,31 @@
+server:
+  port: 5001
+
+spring:
+  application:
+    name: msc-zuul
+  datasource: 
+    url: jdbc:mysql://mysql.zlsrj.com:3306/cloudDB01
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+eureka:  client:    service-url:      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:    instance-id: msc-zuul-5001
+    prefer-ip-address: true
+
+
+zuul: 
+  prefix: /abc
+#  ignored-services:#   - msc-dept
+#   - msc-emp  routes:    mydept.serviceId: msc-dept
+    mydept.path: /mydept/**
+    myemp.serviceId: msc-emp
+    myemp.path: /myemp/**
+
+
+jwt: 
+  secret: Z3kyMDIw
+  expiration: 604800 #60*60*24
+  tokenHeader: Authorization
+  tokenHead: Bearer    

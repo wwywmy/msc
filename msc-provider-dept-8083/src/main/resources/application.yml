@@ -9,7 +9,7 @@ eureka:  client:    service-url:      #defaultZone: http://localhost:7001/eur
 spring:  application:    name: msc-dept
   datasource:
     driver-class-name: com.p6spy.engine.spy.P6SpyDriver
-    url: jdbc:p6spy:mysql://localhost:3306/cloudDB03
+    url: jdbc:p6spy:mysql://localhost:3306/cloudDB03?serverTimezone=UTC
     username: root
     password: 123456
 mybatis:

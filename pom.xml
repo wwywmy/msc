@@ -11,6 +11,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 		<junit.version>4.12</junit.version>
 		<log4j.version>1.2.17</log4j.version>
 		<lombok.version>1.18.8</lombok.version>
@@ -84,6 +85,11 @@
 		<module>msc-eureka-7003</module>
 		<module>msc-provider-dept-8082</module>
 		<module>msc-provider-dept-8083</module>
+		<module>msc-consumer-dept-feign</module>
+		<module>msc-provider-dept-hystrix-8001</module>
+		<module>msc-consumer-hystrix-dashboard</module>
+		<module>msc-zuul-5001</module>
+		<module>msc-provider-emp-8086</module>
 	</modules>
 
 	<parent>
